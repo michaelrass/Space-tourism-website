@@ -84,7 +84,7 @@
 .button__item-1,
 .button__item-2 {
 	color: var(--tertiary-color);
-	font-size: var(--nav-text-font-size);
+	font-size: 1rem;
 	letter-spacing: var(--letter-spacing-M);
 }
 
