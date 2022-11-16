@@ -4,19 +4,19 @@
 	--tertiary-color: #fff;
 	--hover-gray-color: #979797;
 
-	--heading-font-size-XL: 8.33rem;
-	--heading-font-size-L: 5.55rem;
-	--heading-font-size-M: 3.11rem;
-	--heading-font-size-S: 1.77rem;
-	--heading-font-size-XS: 1.55rem;
+	--heading-font-size-XL: 8.33rem;		/* 150px */
+	--heading-font-size-L: 5.55rem;		/* 100px */
+	--heading-font-size-M: 3.11rem;		/* 56px */
+	--heading-font-size-S: 1.77rem;		/* 32px */
+	--heading-font-size-XS: 1.55rem;		/* 28px */
 
-	--subheading-font-size-L: 1.55rem;
-	--subheading-font-size-M: 0.77rem;
+	--subheading-font-size-L: 1.55rem;	/* 28px */
+	--subheading-font-size-M: 0.77rem;	/* 14px */
 
-	--nav-text-font-size: 0.88rem;
-	--body-text-font-size: 1rem;
+	--nav-text-font-size: 0.88rem;		/* 16px */
+	--body-text-font-size: 1rem;			/* 18px */
 
-	--letter-spacing-L: 0.26rem;
-	--letter-spacing-M: 0.15rem;
-	--letter-spacing-S: 0.13rem;
+	--letter-spacing-L: 0.26rem;			/* 4.75px */
+	--letter-spacing-M: 0.15rem;			/* 2.7px */
+	--letter-spacing-S: 0.13rem;			/* 2.35px */
 }
