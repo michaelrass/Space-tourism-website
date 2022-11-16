@@ -1,1 +1,13 @@
-/* fonts.css */
+@font-face {
+	font-family: 'Barlow-Condensed';
+	src: url(../assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Bellefair';
+	src: url(../assets/fonts/Bellefair/Bellefair-Regular.ttf);
+	font-weight: 400;
+	font-style: normal;
+}
