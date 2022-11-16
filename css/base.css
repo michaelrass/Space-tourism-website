@@ -2,10 +2,18 @@ html {
 	font-size: 18px;
 }
 
-body {
+.body-home {
 	width: 100vw;
 	height: 100vh;
 	background-image: url(../assets/img/home/background-home-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.body-destination {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../assets/img/destination/background-destination-desktop.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
