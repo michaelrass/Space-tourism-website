@@ -1,1 +1,22 @@
-/* variables.css */
+:root {
+	--primary-color: #0B0D17;
+	--secondary-color: #D0D6F9;
+	--tertiary-color: #fff;
+	--hover-gray-color: #979797;
+
+	--heading-font-size-XL: 150px;
+	--heading-font-size-L: 100px;
+	--heading-font-size-M: 56px;
+	--heading-font-size-S: 32px;
+	--heading-font-size-XS: 28px;
+
+	--subheading-font-size-L: 28px;
+	--subheading-font-size-M: 14px;
+
+	--nav-text-font-size: 16px;
+	--body-text-font-size: 18px;
+
+	--letter-spacing-L: 4.75px;
+	--letter-spacing-M: 2.7px;
+	--letter-spaving-S: 2.35px;
+}
