@@ -1,1 +1,7 @@
-/* base.css */
+html {
+	font-size: 18px;
+}
+
+body {
+	width: 100%;
+}
