@@ -1,4 +1,5 @@
 export default function Destination() {	
+	const mainDestination = document.querySelector('.main-destination');
 	const navButtons = document.querySelectorAll('.navigation__button-planet');
 	const navButtonsUnderline = document.querySelectorAll('.navigation__button-planet__button--underline');
 	const destinationTitle = document.querySelectorAll('.information__title-destination--hidden');
@@ -9,17 +10,20 @@ export default function Destination() {
 
 	let currentIndex = 0;
 
-	window.addEventListener('keyup', handleWindowKeyup);
-	
-	for (let index = 0; index < navButtons.length; index += 1) {
-		navButtons[index].addEventListener('click', event => {
-			handleNavButtonClick(event, index);
-		})
+	if (mainDestination) {
+		window.addEventListener('keyup', handleWindowKeyup);
+		
+		for (let index = 0; index < navButtons.length; index += 1) {
+			navButtons[index].addEventListener('click', event => {
+				handleNavButtonClick(event, index);
+			})
+		}
 	}
+	
 
 	function handleWindowKeyup(event) {
 		togglePlanetsWithLeftRightArrows(event);
-		renderHtml();
+		renderHtmlDestination();
 	}
 	
 	function handleNavButtonClick(event, index) {
@@ -43,7 +47,8 @@ export default function Destination() {
 		}
 	}
 
-	function renderHtml() {		
+	function renderHtmlDestination() {		
+		if (mainDestination) {
 			destinationTitle.forEach(title => {
 				title.classList.remove('information__title-destination--active');
 			})
@@ -74,7 +79,9 @@ export default function Destination() {
 			destinationTravelTime[currentIndex].classList.add('travel-time-container__value--active');
 			slideshow[currentIndex].classList.add('planet-image-container__image--active');
 			navButtonsUnderline[currentIndex].classList.add('navigation__button-planet--active');
+		}
+			
 	}
 
-	renderHtml();
+	renderHtmlDestination();
 }

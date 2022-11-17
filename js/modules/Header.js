@@ -28,21 +28,17 @@ export default function Header() {
 
 	function goToHomeHtml() {
 		window.location.href = '../../html/home.html';
-		console.log('html');
 	}
 	
 	function goToDestinationHtml() {
 		window.location.href = '../../html/destination.html';
-		console.log('destination');
 	}
 	
 	function goToCrewHtml() {
 		window.location.href = '../../html/crew.html';
-		console.log('crew');
 	}
 	
 	function goToTechnologyHtml() {
 		window.location.href = '../../html/technology.html';
-		console.log('technology')
 	}
 }

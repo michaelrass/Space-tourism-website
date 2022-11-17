@@ -45,16 +45,16 @@
 	grid-area: 6 / 8 / 6 / 8;
 	width: 15.2rem;
 	height: 15.2rem;
-	margin-left: 30px;
+	margin-left: 1.66rem;
 	border: none;
 	background-color: var(--tertiary-color);
 	font-family: 'Bellefair';
 	font-size: var(--heading-font-size-S);
 	color: var(--primary-color);
-	border-radius: 270px;
-	transition: all 150ms ease-in-out;
+	border-radius: 15.2rem;
 }
 
 .main__explore-button:hover {
+	transition: all 200ms ease-in-out;
 	box-shadow: 0 0 5px 2.77rem #97979741;
 }
