@@ -1,7 +1,7 @@
 export default function Destination() {	
 	const navButtons = document.querySelectorAll('.navigation__button-planet');
 	const navButtonsUnderline = document.querySelectorAll('.navigation__button-planet__button--underline');
-	const destinationTitle = document.querySelectorAll('.information__title--hidden');
+	const destinationTitle = document.querySelectorAll('.information__title-destination--hidden');
 	const destinationParagraph = document.querySelectorAll('.information__paragraph--hidden');
 	const destinationDistance = document.querySelectorAll('.distance-container__value--hidden');
 	const destinationTravelTime = document.querySelectorAll('.travel-time-container__value--hidden');
@@ -45,7 +45,7 @@ export default function Destination() {
 
 	function renderHtml() {		
 			destinationTitle.forEach(title => {
-				title.classList.remove('information__title--active');
+				title.classList.remove('information__title-destination--active');
 			})
 	
 			destinationParagraph.forEach(paragraph => {
@@ -68,7 +68,7 @@ export default function Destination() {
 				button.classList.remove('navigation__button-planet--active');
 			}) 
 			
-			destinationTitle[currentIndex].classList.add('information__title--active');
+			destinationTitle[currentIndex].classList.add('information__title-destination--active');
 			destinationParagraph[currentIndex].classList.add('information__paragraph--active');
 			destinationDistance[currentIndex].classList.add('distance-container__value--active');
 			destinationTravelTime[currentIndex].classList.add('travel-time-container__value--active');

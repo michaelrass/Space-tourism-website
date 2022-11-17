@@ -4,9 +4,9 @@ export default function Crew() {
 	const crewInfo = document.querySelectorAll('.information-container__paragraph-crew');
 	const crewSlideshow = document.querySelectorAll('.image-container__crew-image');
 	const navButtonDots = document.querySelectorAll('.button-navigation__button-dot');
-
+	
 	let currentIndex = 0;
-
+	
 	window.addEventListener('keyup', handleWindowKeyup);
 	
 	for (let index = 0; index < navButtonDots.length; index += 1) {
@@ -14,7 +14,9 @@ export default function Crew() {
 			handleNavButtonDotClick(event, index);
 		})
 	}
-
+	
+	renderHtml();
+	
 	function handleWindowKeyup(event) {
 		toggleCrewMembersWithLeftRightArrows(event);
 		renderHtml();
@@ -73,5 +75,4 @@ export default function Crew() {
 		navButtonDots[currentIndex].classList.add('button-navigation__button-dot--active');
 	}
 
-	renderHtml();
 }
