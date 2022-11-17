@@ -18,6 +18,14 @@ html {
 	background-size: cover;
 }
 
+.body-crew {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../assets/img/crew/background-crew-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 ul {
 	list-style: none;
 }
