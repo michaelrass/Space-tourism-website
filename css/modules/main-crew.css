@@ -1,3 +1,126 @@
 .main-crew {
-	
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: repeat(10, 10%);
+	grid-template-rows: repeat(10, 10%);
+}
+
+.main__title-container {
+	grid-area: 3 / 2 / 3 / 6;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.title-container__number {
+	font-family: 'Barlow';
+	font-weight: 700;
+	color: var(--hover-gray-color);
+	font-size: var(--heading-font-size-XS);
+	letter-spacing: var(--letter-spacing-L);
+	margin-right: 2rem;
+}
+
+.title-container__text {
+	font-family: 'Barlow';
+	font-weight: 400;
+	font-size: var(--heading-font-size-XS);
+	color: var(--tertiary-color);
+	letter-spacing: var(--letter-spacing-L);
+}
+
+.main__information-container {
+	grid-area: 5 / 2 / 8 / 6;
+	font-family: 'Bellefair';
+	max-width: px;
+}
+
+.information-container__title-small {
+	display: none;
+	font-family: 'Bellefair';
+	font-weight: 400;
+	color: var(--secondary-color);
+	font-size: var(--heading-font-size-S);
+	letter-spacing: var(--letter-spacing-S);
+	width: 100%;
+	font-weight: 400;
+	margin-bottom: 1.33rem;
+}
+
+.information-container__title-small--active {
+	display: block;
+}
+
+.information-container__title-large {
+	display: none;
+	width: 100%;
+	font-size: var(--heading-font-size-M);
+	color: var(--tertiary-color);
+	font-weight: 400;
+	margin-top: 1.33rem;
+	margin-bottom: 1.33rem;
+}
+
+.information-container__title-large--active {
+	display: block;
+}
+
+.information-container__paragraph-crew {
+	display: none;
+	font-family: 'Barlow';
+	line-height: 32px;
+	font-weight: 400;
+	font-size: 1rem;
+	color: var(--secondary-color);
+	letter-spacing: 0.08rem;
+	max-width: 444px;
+}
+
+.information-container__paragraph-crew--active {
+	display: block;
+}
+
+/* .main-crew__image-container {
+	width: 100%;
+	height: 100%;
+	grid-area: 3 / 6 / 10 / 10;
+	position: relative;
+} */
+
+.image-container__crew-image {
+	grid-area: 3 / 5 / 11 / 11;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	object-fit: contain;
+}
+
+.image-container__crew-image--active {
+	opacity: 1;
+}
+
+.main-crew__button-navigation {
+	width: 70%;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	grid-area: 9 / 2 / 10 / 4;
+}
+
+.button-navigation__button-dot {
+	width: 0.83rem;
+	height: 0.83rem;
+	border-radius: 0.83rem;
+	border: none;
+	background-color: #d0d6f939;
+}
+
+.button-navigation__button-dot:hover {
+	background-color: #d0d6f976;
+}
+
+.button-navigation__button-dot--active {
+	background-color: var(--tertiary-color);
 }

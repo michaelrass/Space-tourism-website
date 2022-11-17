@@ -7,8 +7,7 @@
 }
 
 .main__title-container {
-	grid-column: 2 / 6;
-	grid-row: 3;
+	grid-area: 3 / 2 / 3 / 6;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -32,8 +31,7 @@
 }
 
 .main__planet-image-container {
-	grid-column: 2 / 6;
-	grid-row: 5 / 10;
+	grid-area: 5 / 2 / 10 / 6;
 	position: relative;
 }
 
@@ -52,8 +50,7 @@
 }
 
 .main__information {
-	grid-column: 7 / 10;
-	grid-row: 5 / 10;
+	grid-area: 5 / 7 / 10 / 10;
 }
 
 .information__navigation {
