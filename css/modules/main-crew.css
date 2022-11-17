@@ -31,9 +31,8 @@
 }
 
 .main__information-container {
-	grid-area: 5 / 2 / 8 / 6;
+	grid-area: 5 / 2 / 8 / 7;
 	font-family: 'Bellefair';
-	max-width: px;
 }
 
 .information-container__title-small {
@@ -81,19 +80,13 @@
 	display: block;
 }
 
-/* .main-crew__image-container {
-	width: 100%;
-	height: 100%;
-	grid-area: 3 / 6 / 10 / 10;
-	position: relative;
-} */
-
 .image-container__crew-image {
 	grid-area: 3 / 5 / 11 / 11;
 	width: 100%;
 	height: 100%;
 	opacity: 0;
 	object-fit: contain;
+	transition: 300ms ease-in-out;
 }
 
 .image-container__crew-image--active {
@@ -119,8 +112,10 @@
 
 .button-navigation__button-dot:hover {
 	background-color: #d0d6f976;
+	z-index: 10;
 }
 
 .button-navigation__button-dot--active {
 	background-color: var(--tertiary-color);
+	z-index: 20;
 }
