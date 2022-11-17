@@ -26,6 +26,14 @@ html {
 	background-size: cover;
 }
 
+.body-technology {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../assets/img/technology/background-technology-desktop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 ul {
 	list-style: none;
 }

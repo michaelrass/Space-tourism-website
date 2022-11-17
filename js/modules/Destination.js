@@ -28,7 +28,7 @@ export default function Destination() {
 	
 	function handleNavButtonClick(event, index) {
 		currentIndex = index;
-		renderHtml();
+		renderHtmlDestination();
 	}
 
 	function togglePlanetsWithLeftRightArrows(event) {
