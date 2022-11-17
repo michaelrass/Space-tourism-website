@@ -14,7 +14,7 @@ export default function Technology() {
 			})
 		}
 
-		// window.addEventListener('keyup', handleWindowKeyup);
+		window.addEventListener('keyup', handleWindowKeyup);
 	}
 
 	renderHtmlTechnology();
@@ -24,8 +24,41 @@ export default function Technology() {
 		renderHtmlTechnology();
 	}
 
+	function handleWindowKeyup(event) {
+		navigateWithUpAndDownArros(event);
+		renderHtmlTechnology();
+	}
+
 	function navigateBetweenTechnology(event, index) {
 		currentIndex = index;
+	}
+
+	function navigateWithUpAndDownArros(event) {
+		if (event.key === 'ArrowLeft') {
+			currentIndex -= 1;
+				if (currentIndex < 0) {
+					currentIndex = technologySlideshow.length - 1;
+				}
+		}
+		if (event.key === 'ArrowRight') {
+			currentIndex += 1;
+				if (currentIndex > technologySlideshow.length - 1) {
+					currentIndex = 0;
+				}
+		}
+		if (event.key === 'ArrowDown') {
+			currentIndex += 1;
+				if (currentIndex > technologySlideshow.length - 1) {
+					currentIndex = 0;
+				}
+		}
+
+		if (event.key === 'ArrowUp') {
+			currentIndex -= 1;
+				if (currentIndex < 0) {
+					currentIndex = technologySlideshow.length - 1;
+				}
+		}
 	}
 
 	function renderHtmlTechnology() {
