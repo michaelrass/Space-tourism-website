@@ -22,7 +22,7 @@
 					<!-- container for fancy header line -->
 				</div>
 
-				<button class="navigation__button">
+				<button class="navigation__button navigation__button-home">
 					<span class="button__item-1">00</span>
 					<span class="button__item-2">HOME</span>
 					<span class="button__underline">
@@ -30,7 +30,7 @@
 					</span>
 				</button>
 				
-				<button class="navigation__button">
+				<button class="navigation__button navigation__button-destination">
 					<span class="button__item-1">01</span>
 					<span class="button__item-2">DESTINATION</span>
 					<span class="button__underline navigation__button--active">
@@ -38,7 +38,7 @@
 					</span>
 				</button>
 				
-				<button class="navigation__button">
+				<button class="navigation__button navigation__button-crew">
 					<span class="button__item-1">02</span>
 					<span class="button__item-2">CREW</span>
 					<span class="button__underline">
@@ -46,7 +46,7 @@
 					</span>
 				</button>
 				
-				<button class="navigation__button">
+				<button class="navigation__button navigation__button-technology">
 					<span class="button__item-1">03</span>
 					<span class="button__item-2">TECHNOLOGY</span>
 					<span class="button__underline">
@@ -68,7 +68,7 @@
 			</div>
 
 			<div class="main__planet-image-container">
-				<img class="planet-image-container__image planet-image-container__image--active" src="../assets/img/destination/image-moon.webp" alt="">
+				<img class="planet-image-container__image" src="../assets/img/destination/image-moon.webp" alt="">
 				<img class="planet-image-container__image" src="../assets/img/destination/image-mars.webp" alt="">
 				<img class="planet-image-container__image" src="../assets/img/destination/image-europa.webp" alt="">
 				<img class="planet-image-container__image" src="../assets/img/destination/image-titan.webp" alt="">
@@ -76,18 +76,41 @@
 
 			<section class="main__information">
 				<div class="information__navigation">
-					<button class="navigation__button">MOON</button>
-					<button class="navigation__button">MARS</button>
-					<button class="navigation__button">EUROPA</button>
-					<button class="navigation__button">TITAN</button>
+					<button class="navigation__button-planet">
+						MOON
+						<span class="navigation__button-planet__button--underline">
+							<!-- container for fancy underline -->
+						</span>
+					</button>
+
+					<button class="navigation__button-planet">
+						MARS
+						<span class="navigation__button-planet__button--underline">
+							<!-- container for fancy underline -->
+						</span>
+					</button>
+					
+					<button class="navigation__button-planet">
+						EUROPA
+						<span class="navigation__button-planet__button--underline">
+							<!-- container for fancy underline -->
+						</span>
+					</button>
+					
+					<button class="navigation__button-planet">
+						TITAN
+						<span class="navigation__button-planet__button--underline">
+							<!-- container for fancy underline -->
+						</span>
+					</button>
 				</div>
 
-				<h1 class="information__title--hidden information__title--active">MOON</h1>
+				<h1 class="information__title--hidden">MOON</h1>
 				<h1 class="information__title--hidden">MARS</h1>
 				<h1 class="information__title--hidden">EUROPA</h1>
 				<h1 class="information__title--hidden">TITAN</h1>
 
-				<p class="information__paragraph--hidden information__paragraph--active">
+				<p class="information__paragraph--hidden">
 					See our planet as you've never seen it before. A perfect
 					relaxing trip away to help regain perspective and come
 					back refreshed. While you're there, take in some history
@@ -115,12 +138,18 @@
 				<div class="information__statistics">
 					<div class="statistics__distance-container">
 						<span class="distance-container__title">AVG. DISTANCE</span>
-						<span class="distance-container__value">384,400 KM</span>
+						<span class="distance-container__value--hidden">384,000 KM</span>
+						<span class="distance-container__value--hidden">225 mil. KM</span>
+						<span class="distance-container__value--hidden">628 mil. KM</span>
+						<span class="distance-container__value--hidden">1.6 bil. KM</span>
 					</div>
 
 					<div class="information__travel-time-container">
 						<span class="travel-time-container__title">EST. TRAVEL TIME</span>
-						<span class="travel-time-container__value">3 DAYS</span>
+						<span class="travel-time-container__value--hidden">3 DAYS</span>
+						<span class="travel-time-container__value--hidden">9 MONTHS</span>
+						<span class="travel-time-container__value--hidden">3 YEARS</span>
+						<span class="travel-time-container__value--hidden">7 YEARS</span>
 					</div>
 				</div>
 			</section>
