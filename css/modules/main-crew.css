@@ -86,7 +86,7 @@
 	height: 100%;
 	opacity: 0;
 	object-fit: contain;
-	transition: 300ms ease-in-out;
+	transition: 200ms ease-in-out;
 }
 
 .image-container__crew-image--active {
