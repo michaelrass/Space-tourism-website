@@ -17,19 +17,20 @@
 }
 
 .title__small {
+	font-family: 'Barlow';
 	color: var(--secondary-color);
 	font-size: 20px;
 	letter-spacing: 4.72px;
 	width: 100%;
 	font-weight: 400;
-	margin-bottom: 24px;
+	margin-bottom: 1.33rem;
 }
 
 .title__large {
 	font-size: var(--heading-font-size-XL);
 	color: var(--tertiary-color);
 	font-weight: 400;
-	margin-bottom: 24px;
+	margin-bottom: 1.33rem;
 }
 
 .title__intro {
@@ -57,4 +58,33 @@
 .main__explore-button:hover {
 	transition: all 200ms ease-in-out;
 	box-shadow: 0 0 5px 2.77rem #97979741;
+}
+
+@media screen and (max-width: 850px) {
+	.main-home {
+		min-height: 800px;
+	}
+	
+	.main__title {
+		grid-area: 3 / 3 / 6 / 9;
+		max-width: 445px;
+		justify-self: center;
+		text-align: center;
+		
+	}
+	
+	.main__explore-button {
+		width: 13.44rem;
+		height: 13.44rem;
+		border-radius: 13.44rem;
+		grid-area: 8 / 4 / 11 / 8;
+		margin-left: 0;
+		justify-self: center;
+	}
+}
+
+@media screen and (max-height: 810px) {
+	.title__small {
+		margin-bottom: 0;
+	}
 }

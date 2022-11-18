@@ -1,7 +1,7 @@
 export default function Crew() {
 	const mainCrew = document.querySelector('.main-crew');
-	const crewTitle = document.querySelectorAll('.information-container__title-small');
-	const crewName = document.querySelectorAll('.information-container__title-large');
+	const crewTitle = document.querySelectorAll('.information-crew-container__title-small');
+	const crewName = document.querySelectorAll('.information-crew-container__title-large');
 	const crewInfo = document.querySelectorAll('.information-container__paragraph-crew');
 	const crewSlideshow = document.querySelectorAll('.image-container__crew-image');
 	const navButtonDots = document.querySelectorAll('.button-navigation__button-dot');
@@ -52,11 +52,11 @@ export default function Crew() {
 	function renderHtmlCrew() {
 		if (mainCrew) {
 			crewTitle.forEach(title => {
-				title.classList.remove('information-container__title-small--active');
+				title.classList.remove('information-crew-container__title-small--active');
 			})
 	
 			crewName.forEach(name => {
-				name.classList.remove('information-container__title-large--active');
+				name.classList.remove('information-crew-container__title-large--active');
 			})
 	
 			crewInfo.forEach(info => {
@@ -71,8 +71,8 @@ export default function Crew() {
 				dot.classList.remove('button-navigation__button-dot--active');
 			})
 	
-			crewTitle[currentIndex].classList.add('information-container__title-small--active');
-			crewName[currentIndex].classList.add('information-container__title-large--active');
+			crewTitle[currentIndex].classList.add('information-crew-container__title-small--active');
+			crewName[currentIndex].classList.add('information-crew-container__title-large--active');
 			crewInfo[currentIndex].classList.add('information-container__paragraph-crew--active');
 			crewSlideshow[currentIndex].classList.add('image-container__crew-image--active');
 			navButtonDots[currentIndex].classList.add('button-navigation__button-dot--active');
