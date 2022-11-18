@@ -185,7 +185,7 @@
 	}
 	
 	.main__title-container {
-		grid-area: 2 / 2 / 3 / 6;
+		grid-area: 2 / 2 / 3 / 8;
 		display: flex;
 		align-items: center;
 	}
@@ -244,5 +244,62 @@
 	.distance-container__value--active,
 	.travel-time-container__value--active {
 		margin-top: 0.8rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.body-destination {
+		background-image: url(../../assets/img/destination/background-destination-mobile.jpg);
+	}
+
+	.main__title-container {
+		grid-area: 2 / 2 / 3 / 10;
+		align-self: flex-start;
+		justify-self: center;
+	}
+
+	.title-container__number {
+		font-size: 0.88rem;
+		margin-right: 1rem;
+		letter-spacing: 0.18px;
+	}
+
+	.title-container__text {
+		font-size: 0.88rem;
+		letter-spacing: 2.7px;
+		font-weight: 400;
+	}
+
+	.main__planet-image-container {
+		grid-area: 2 / 4 / 5 / 8;
+		margin-top: 2rem;
+	}
+
+	.main__information-destination {
+		grid-area: 5 / 2 / 10 / 10;
+		text-align: center;
+		justify-self: start;
+	}
+
+	.navigation__button-planet {
+		font-size: 0.77rem;
+		letter-spacing: 2.36px;
+	}
+
+	.information__navigation-destination {
+		padding-top: 0.5rem;
+	}
+
+	.information__title-destination--hidden {
+		font-size: var(--heading-font-size-M);
+		letter-spacing: var(--letter-spacing-S);
+		margin-top: 1.5rem;
+	}
+
+	.information__paragraph--hidden {
+		line-height: 25px;
+		font-weight: 400;
+		font-size: 0.83rem;
+		letter-spacing: 0.08rem;
 	}
 }
