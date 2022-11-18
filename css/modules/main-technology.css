@@ -1,6 +1,7 @@
 .main-technology {
 	width: 100%;
 	height: 100%;
+	min-height: 850px;
 	display: grid;
 	grid-template-columns: repeat(10, 10%);
 	grid-template-rows: repeat(10, 10%);
@@ -9,6 +10,30 @@
 .main__information-technology-container {
 	grid-area: 5 / 3 / 8 / 7;
 	font-family: 'Bellefair';
+}
+
+.main__title-technology-container {
+	grid-area: 3 / 2 / 3 / 8;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.title-technology-container__number {
+	font-family: 'Barlow';
+	font-weight: 700;
+	color: var(--hover-gray-color);
+	font-size: var(--heading-font-size-XS);
+	letter-spacing: var(--letter-spacing-L);
+	margin-right: 2rem;
+}
+
+.title-technology-container__text {
+	font-family: 'Barlow';
+	font-weight: 400;
+	font-size: var(--heading-font-size-XS);
+	color: var(--tertiary-color);
+	letter-spacing: var(--letter-spacing-L);
 }
 
 .information-container__title-technology-small {
@@ -96,4 +121,109 @@
 
 .image-container__technology-image--active {
 	display: block;
+}
+
+.image-container__technology-image-tablet {
+	display: none;
+	grid-area: 3 / 1 / 7 / 11;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@media screen and (max-width: 850px) {
+	.body-technology {
+		width: 100vw;
+		height: 100vh;
+		background-image: url(../../assets/img/technology/background-technology-tablet.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.main-technology {
+		min-height: 650px;
+		grid-template-columns: repeat(20, 5%);
+		grid-template-rows: repeat(20, 5%);
+	}
+
+	.main__title-technology-container {
+		grid-area: 3 / 3 / 5 / 10;
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.title-technology-container__number {
+		font-family: 'Barlow';
+		font-weight: 700;
+		color: var(--hover-gray-color);
+		font-size: 1.11rem;
+		letter-spacing: 3.38px;
+		margin-right: 1rem;
+	}
+	
+	.title-technology-container__text {
+		font-family: 'Barlow';
+		font-weight: 400;
+		font-size: 1.11rem;
+		color: var(--tertiary-color);
+		letter-spacing: 3.38px;
+	}
+
+	.image-container__technology-image-tablet {
+		display: none;
+		grid-area: 5 / 1 / 12 / 21;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	.image-container__technology-image-tablet--active {
+		display: block;
+	}
+
+	.image-container__technology-image--active {
+		display: none;
+	}
+	
+	.main__information-technology-container {
+		grid-area: 15 / 4 / 19 / 18;
+		text-align: center;
+		text-align: center;
+		font-family: 'Bellefair';
+	}
+
+	.information-container__title-technology-small {
+		font-size: var(--nav-text-font-size);
+		letter-spacing: var(--letter-spacing-M);
+		width: 100%;
+		margin-bottom: 0;
+	}
+
+	.information-container__title-technology-large {
+		font-size: 2.22rem;
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.information-container__paragraph-technology {
+		line-height: 28px;
+		font-size: 0.88rem;
+		letter-spacing: 0.08rem;
+		max-width: unset;
+	}
+	
+	.main__navigation-technology {
+		grid-area: 12 / 7 / 14 / 15;
+		flex-flow: row;
+		justify-content: center;
+		align-items: end;
+		gap: 1rem;
+	}
+
+	.navigation-technology__button {
+		width: 3.33rem;
+		height: 3.33rem;
+		border-radius: 3.33rem;
+	}
 }
