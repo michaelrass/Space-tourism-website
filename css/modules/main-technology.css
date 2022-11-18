@@ -134,11 +134,7 @@
 
 @media screen and (max-width: 850px) {
 	.body-technology {
-		width: 100vw;
-		height: 100vh;
 		background-image: url(../../assets/img/technology/background-technology-tablet.jpg);
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 	.main-technology {
@@ -155,7 +151,7 @@
 	}
 
 	.title-technology-container__number {
-		font-family: 'Barlow';
+		font-family: 'Barlow-Condensed';
 		font-weight: 700;
 		color: var(--hover-gray-color);
 		font-size: 1.11rem;
@@ -164,7 +160,7 @@
 	}
 	
 	.title-technology-container__text {
-		font-family: 'Barlow';
+		font-family: 'Barlow-Condensed';
 		font-weight: 400;
 		font-size: 1.11rem;
 		color: var(--tertiary-color);
@@ -189,7 +185,6 @@
 	
 	.main__information-technology-container {
 		grid-area: 15 / 4 / 18 / 18;
-		text-align: center;
 		text-align: center;
 		font-family: 'Bellefair';
 	}
@@ -226,5 +221,88 @@
 		width: 3.33rem;
 		height: 3.33rem;
 		border-radius: 3.33rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.body-technology {
+		background-image: url(../../assets/img/technology/background-technology-mobile.jpg);
+	}
+
+	.main-technology {
+		min-width: unset;
+		min-height: 560px;
+	}
+
+	.main__title-technology-container {
+		grid-area: 3 / 6 / 4 / 17;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.title-technology-container__number {
+		color: var(--hover-gray-color);
+		font-size: 0.88rem;
+		letter-spacing: 2.7px;
+		margin-right: 1rem;
+	}
+	
+	.title-technology-container__text {
+		font-size: 0.88rem;
+		letter-spacing: 2.7px;
+	}
+
+	.image-container__technology-image-tablet {
+		display: none;
+		grid-area: 5 / 1 / 10 / 21;
+	}
+
+	.image-container__technology-image-tablet--active {
+		display: block;
+	}
+
+	.main__navigation-technology {
+		grid-area: 10 / 7 / 12 / 15;
+		flex-flow: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.navigation-technology__button {
+		width: 2.22rem;
+		min-width: 2.22rem;
+		height: 2.22rem;
+		border-radius: 2.22rem;
+		font-size: 0.88rem;
+		padding-left: 0.1rem;
+	}
+
+	.main__information-technology-container {
+		grid-area: 12 / 1 / 19 / 21;
+		padding: 0 0.5rem 3rem 0.5rem;
+	}
+
+	.information-container__title-technology-small {
+		font-family: 'Barlow-Condensed';
+		font-size: 0.77rem;
+		letter-spacing: 2.36px;
+	}
+
+	.information-container__title-technology-large {
+		font-family: 'Bellefair';
+		font-size: 1.33rem;
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+	
+	.information-container__paragraph-technology {
+		font-family: 'Barlow';
+		line-height: 25px;
+		font-size: 0.83rem;
+		letter-spacing: 0.08rem;
+		max-width: unset;
 	}
 }
