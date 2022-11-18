@@ -133,6 +133,7 @@
 	flex-flow: column;
 	justify-content: space-around;
 	padding-top: 4rem;
+	padding-bottom: 4rem;
 }
 
 .aside__bottom-empty-container {
@@ -141,12 +142,14 @@
 }
 
 .top-container__button-in-aside {
+	width: 80%;
 	padding-left: 2rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	display: flex;
 	gap: 1rem;
 	border: none;
+	position: relative;
 }
 
 .button-in-aside__number {

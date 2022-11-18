@@ -251,6 +251,10 @@
 		background-image: url(../../assets/img/destination/background-destination-mobile.jpg);
 	}
 
+	.main-destination {
+		min-height: 850px;
+	}
+	
 	.main__title-container {
 		grid-area: 2 / 2 / 3 / 10;
 		align-self: flex-start;
@@ -260,7 +264,7 @@
 	.title-container__number {
 		font-size: 0.88rem;
 		margin-right: 1rem;
-		letter-spacing: 0.18px;
+		letter-spacing: 2px;
 	}
 
 	.title-container__text {
@@ -300,5 +304,25 @@
 		font-weight: 400;
 		font-size: 0.83rem;
 		letter-spacing: 0.08rem;
+		padding-bottom: 1rem;
+	}
+
+	.information__statistics {
+		flex-flow: column;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0;
+		padding: 0;
+		padding-top: 1rem;
+	}
+
+	.statistics__distance-container,
+	.information__travel-time-container {
+		margin-bottom: 1.5rem;
+	}
+
+	.distance-container__value--active,
+	.travel-time-container__value--active {
+		margin-top: 1rem;
 	}
 }
