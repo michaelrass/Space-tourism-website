@@ -7,7 +7,7 @@
 	padding-left: 3.05rem;
 	display: flex;
 	justify-content: space-between;
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	align-items: center;
 }
 
@@ -150,7 +150,7 @@
 }
 
 .button-in-aside__number {
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 700;
 	font-size: --nav-text-font-size;
 	letter-spacing: var(--letter-spacing-M);
@@ -158,7 +158,7 @@
 }
 
 .button-in-aside__text {
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 400;
 	font-size: --nav-text-font-size;
 	letter-spacing: var(--letter-spacing-M);

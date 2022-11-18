@@ -7,17 +7,16 @@
 }
 
 .main__title {
-	grid-area: 7 / 2 / 7 / 5;
+	grid-area: 7 / 2 / 7 / 6;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
 	max-width: 450px;
-	font-family: 'Bellefair';
 }
 
 .title__small {
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	color: var(--secondary-color);
 	font-size: 20px;
 	letter-spacing: 4.72px;
@@ -31,6 +30,7 @@
 	color: var(--tertiary-color);
 	font-weight: 400;
 	margin-bottom: 1.33rem;
+	font-family: 'Bellefair';
 }
 
 .title__intro {

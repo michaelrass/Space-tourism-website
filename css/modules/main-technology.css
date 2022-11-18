@@ -20,7 +20,7 @@
 }
 
 .title-technology-container__number {
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 700;
 	color: var(--hover-gray-color);
 	font-size: var(--heading-font-size-XS);
@@ -29,7 +29,7 @@
 }
 
 .title-technology-container__text {
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 400;
 	font-size: var(--heading-font-size-XS);
 	color: var(--tertiary-color);
@@ -38,7 +38,7 @@
 
 .information-container__title-technology-small {
 	display: block;
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 400;
 	color: var(--secondary-color);
 	font-size: 1rem;
@@ -49,6 +49,7 @@
 }
 
 .information-container__title-technology-large {
+	font-family: 'Bellefair';
 	display: none;
 	width: 100%;
 	font-size: var(--heading-font-size-M);

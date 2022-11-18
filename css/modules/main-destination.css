@@ -11,7 +11,7 @@
 	grid-area: 3 / 2 / 4 / 8;
 	display: flex;
 	align-items: center;
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 }
 
 .title-container__number {
@@ -23,7 +23,6 @@
 }
 
 .title-container__text {
-	font-family: 'Barlow';
 	font-weight: 400;
 	font-size: var(--heading-font-size-XS);
 	color: var(--tertiary-color);
@@ -65,7 +64,7 @@
 
 .navigation__button-planet {
 	border: none;
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 400;
 	font-size: 1rem;
 	letter-spacing: var(--letter-spacing-M);
@@ -152,7 +151,7 @@
 
 .distance-container__title,
 .travel-time-container__title {
-	font-family: 'Barlow';
+	font-family: 'Barlow-Condensed';
 	font-weight: 400;
 	letter-spacing: var(--letter-spacing-S);
 	font-size: var(--nav-text-font-size);
