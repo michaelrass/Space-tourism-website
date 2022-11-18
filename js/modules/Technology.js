@@ -4,6 +4,7 @@ export default function Technology() {
 	const technologyType = document.querySelectorAll('.information-container__title-technology-large');
 	const technologyInformation = document.querySelectorAll('.information-container__paragraph-technology');
 	const technologySlideshow = document.querySelectorAll('.image-container__technology-image');
+	const technologySlideshowTablet = document.querySelectorAll('.image-container__technology-image-tablet');
 
 	let currentIndex = 0;
 	
@@ -78,11 +79,16 @@ export default function Technology() {
 			technologySlideshow.forEach(slide => {
 				slide.classList.remove('image-container__technology-image--active');
 			})
+
+			technologySlideshowTablet.forEach(slideTablet => {
+				slideTablet.classList.remove('image-container__technology-image-tablet--active');
+			})
 	
 			navButtons[currentIndex].classList.add('navigation-technology__button--active');
 			technologyType[currentIndex].classList.add('information-container__title-technology-large--active');
 			technologyInformation[currentIndex].classList.add('information-container__paragraph-technology--active');
 			technologySlideshow[currentIndex].classList.add('image-container__technology-image--active');
+			technologySlideshowTablet[currentIndex].classList.add('image-container__technology-image-tablet--active');
 		}
 	}
 }
