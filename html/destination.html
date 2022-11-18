@@ -11,12 +11,48 @@
 	<body class="body-destination">
 		<header class="header">
 			<a class="header__logo-container" href="../html/home.html">
-				<img src="../assets/icons/logo.svg" alt="">
+				<img src="../assets/icons/logo.svg" alt="home">
 			</a>
 
 			<div class="header__divider-line">
 				<!-- container for fancy header line -->
 			</div>
+
+			<button class="header__burger-icon-container">
+				<img class="burger-icon-container__image" src="../assets/icons/icon-hamburger.svg" alt="">
+			</button>
+
+			<aside class="header__aside--hidden">
+				<button class="button-close-aside">
+					<img src="../assets/icons/icon-close.svg" alt="">
+				</button>
+				
+				<div class="aside__top-container">
+					<button class="top-container__button-in-aside">
+						<span class="button-in-aside__number">00</span>
+						<span class="button-in-aside__text">HOME</span>
+					</button>
+					
+					<button class="top-container__button-in-aside">
+						<span class="button-in-aside__number">01</span>
+						<span class="button-in-aside__text">DESTINATION</span>
+					</button>
+					
+					<button class="top-container__button-in-aside">
+						<span class="button-in-aside__number">02</span>
+						<span class="button-in-aside__text">CREW</span>
+					</button>
+					
+					<button class="top-container__button-in-aside">
+						<span class="button-in-aside__number">03</span>
+						<span class="button-in-aside__text">TECHNOLOGY</span>
+					</button>
+					
+				</div>
+
+				<div class="aside__bottom-empty-container"> <!-- empty container to separate burger-menu section into two --> </div>
+			</aside>
+			
 			<nav class="header__navigation">
 				<div class="navigation__line">
 					<!-- container for fancy header line -->
@@ -25,7 +61,7 @@
 				<button class="navigation__button navigation__button-home">
 					<span class="button__item-1">00</span>
 					<span class="button__item-2">HOME</span>
-					<span class="button__underline">
+					<span class="button__underline navigation__button--active">
 						<!-- container for fancy underline -->
 					</span>
 				</button>
@@ -33,7 +69,7 @@
 				<button class="navigation__button navigation__button-destination">
 					<span class="button__item-1">01</span>
 					<span class="button__item-2">DESTINATION</span>
-					<span class="button__underline navigation__button--active">
+					<span class="button__underline">
 						<!-- container for fancy underline -->
 					</span>
 				</button>
