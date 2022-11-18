@@ -112,6 +112,7 @@
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
+	z-index: 9999;
 }
 
 .header__aside--active {
@@ -141,7 +142,10 @@
 	width: 100%;
 }
 
-.top-container__button-in-aside {
+.top-container__button-in-aside-home,
+.top-container__button-in-aside-destination,
+.top-container__button-in-aside-crew,
+.top-container__button-in-aside-technology {
 	width: 80%;
 	padding-left: 2rem;
 	padding-top: 0.5rem;

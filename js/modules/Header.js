@@ -8,6 +8,10 @@ export default function Header() {
 	const buttonBurgerMenu = document.querySelector('.header__burger-icon-container');
 	const asideMenu = document.querySelector('.header__aside--hidden');
 	const buttonCloseAsideMenu = document.querySelector('.button-close-aside');
+	const burgerNavHome = document.querySelector('.top-container__button-in-aside-home');
+	const burgerNavDestination = document.querySelector('.top-container__button-in-aside-destination');
+	const burgerNavCrew = document.querySelector('.top-container__button-in-aside-crew');
+	const burgerNavTechnology = document.querySelector('.top-container__button-in-aside-technology');
 
 	buttonHome.addEventListener('click', handleButtonHomeClick);
 	buttonDestination.addEventListener('click', handleButtonDestinationClick);
@@ -16,6 +20,13 @@ export default function Header() {
 	buttonBurgerMenu.addEventListener('click', handleButtonBurgerMenuClick);
 	buttonCloseAsideMenu.addEventListener('click', handleButtonCloseAsideMenuClick);
 
+	if (asideMenu) {
+		burgerNavHome.addEventListener('click', handleBurgerNavHomeClick);
+		burgerNavDestination.addEventListener('click', handleBurgerNavDestinationClick);
+		burgerNavCrew.addEventListener('click', handleBurgerNavCrewClick);
+		burgerNavTechnology.addEventListener('click', handleBurgerNavTechnologyClick);
+	}
+	
 	function handleButtonHomeClick() {
 		goToHomeHtml();
 	}
@@ -40,6 +51,22 @@ export default function Header() {
 	function handleButtonCloseAsideMenuClick() {
 		closeAsideMenu();
 		renderHtmlAsideMenu();
+	}
+
+	function handleBurgerNavHomeClick() {
+		goToHomeHtml();
+	}
+
+	function handleBurgerNavDestinationClick() {
+		goToDestinationHtml();
+	}
+
+	function handleBurgerNavCrewClick() {
+		goToCrewHtml();
+	}
+
+	function handleBurgerNavTechnologyClick() {
+		goToTechnologyHtml();
 	}
 
 	function goToHomeHtml() {
