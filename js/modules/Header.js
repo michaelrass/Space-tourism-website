@@ -86,7 +86,7 @@ export default function Header() {
 	}
 
 	function openAsideMenu() {
-		burgerMenuVisible = !burgerMenuVisible;
+		burgerMenuVisible = true;
 	}
 
 	function closeAsideMenu() {
