@@ -70,19 +70,19 @@ export default function Header() {
 	}
 
 	function goToHomeHtml() {
-		window.location.href = '../../html/home.html';
+		window.location.href = '../../home.html';
 	}
 	
 	function goToDestinationHtml() {
-		window.location.href = '../../html/destination.html';
+		window.location.href = '../../destination.html';
 	}
 	
 	function goToCrewHtml() {
-		window.location.href = '../../html/crew.html';
+		window.location.href = '../../crew.html';
 	}
 	
 	function goToTechnologyHtml() {
-		window.location.href = '../../html/technology.html';
+		window.location.href = '../../technology.html';
 	}
 
 	function openAsideMenu() {
