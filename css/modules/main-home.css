@@ -53,6 +53,7 @@
 	font-size: var(--heading-font-size-S);
 	color: var(--primary-color);
 	border-radius: 15.2rem;
+	transition: all 200ms ease-in-out;
 }
 
 .main__explore-button:hover {
