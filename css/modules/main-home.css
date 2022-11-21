@@ -43,16 +43,17 @@
 }
 
 .main__explore-button {
-	grid-area: 6 / 8 / 6 / 8;
+	grid-column: 8;
+	grid-row: 6;
 	width: 15.2rem;
 	height: 15.2rem;
+	border-radius: 15.2rem;
 	margin-left: 1.66rem;
 	border: none;
 	background-color: var(--tertiary-color);
 	font-family: 'Bellefair';
 	font-size: var(--heading-font-size-S);
 	color: var(--primary-color);
-	border-radius: 15.2rem;
 	transition: all 200ms ease-in-out;
 }
 
