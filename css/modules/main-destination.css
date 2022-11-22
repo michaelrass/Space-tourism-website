@@ -249,10 +249,11 @@
 @media screen and (max-width: 500px) {
 	.body-destination {
 		background-image: url(../../assets/img/destination/background-destination-mobile.jpg);
+		min-height: 860px;
 	}
 
 	.main-destination {
-		min-height: 850px;
+		min-height: 860px;
 	}
 	
 	.main__title-container {
