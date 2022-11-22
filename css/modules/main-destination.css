@@ -278,7 +278,6 @@
 		grid-area: 2 / 4 / 5 / 8;
 		margin-top: 2rem;
 	}
-
 	.main__planet-image-container::-webkit-scrollbar {
 		display: none;
 	}
