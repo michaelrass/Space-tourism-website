@@ -99,6 +99,11 @@
 		margin-left: 0;
 		justify-self: center;
 	}
+
+	.main__explore-button:hover {
+		transition: unset;
+		box-shadow: unset;
+	}
 }
 
 @media screen and (max-height: 810px) {
