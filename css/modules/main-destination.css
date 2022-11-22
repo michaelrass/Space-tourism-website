@@ -275,23 +275,12 @@
 	}
 
 	.main__planet-image-container {
-		grid-column: 4 / 8;
-		grid-row: 2 / 5;
-		/* grid-area: 2 / 4 / 5 / 8; */
+		grid-area: 2 / 4 / 5 / 8;
 		margin-top: 2rem;
-		display: flex;
-		overflow: scroll;
 	}
 
 	.main__planet-image-container::-webkit-scrollbar {
 		display: none;
-	}
-
-	.planet-image-container__image {
-		position: unset;
-		opacity: unset;
-		object-fit: contain;
-		transition: 200ms ease-in-out;
 	}
 
 	.main__information-destination {
