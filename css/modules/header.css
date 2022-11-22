@@ -110,6 +110,7 @@
 	top: 0;
 	right: -14.11rem;
 	backdrop-filter: blur(40px);
+	-webkit-backdrop-filter: blur(40px);
 	background-color: #9797971e;
 	transition: all 400ms ease-in-out;
 	display: flex;
@@ -174,6 +175,15 @@
 	font-size: --nav-text-font-size;
 	letter-spacing: var(--letter-spacing-M);
 	color: rgb(255, 255, 255);
+}
+
+.aside__backdrop-container {
+	position: absolute;
+	background-color: red;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 /* FOR TABLET */
