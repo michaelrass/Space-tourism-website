@@ -2,7 +2,7 @@ export default function Header() {
 	const buttonBurgerMenu = document.querySelector('.header__burger-icon-container');
 	const asideMenu = document.querySelector('.header__aside--hidden');
 	const buttonCloseAsideMenu = document.querySelector('.button-close-aside');
-	
+		
 	let burgerMenuVisible = false;
 	
 	buttonBurgerMenu.addEventListener('click', handleButtonBurgerMenuClick);

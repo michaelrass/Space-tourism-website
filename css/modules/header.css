@@ -236,9 +236,3 @@
 		right: 1.5rem;
 	}
 }
-
-@media screen and (min-width: 500px) {
-	.header__aside--active {
-		display: none;
-	}
-}
