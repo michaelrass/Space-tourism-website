@@ -2,11 +2,14 @@ export default function Header() {
 	const buttonBurgerMenu = document.querySelector('.header__burger-icon-container');
 	const asideMenu = document.querySelector('.header__aside--hidden');
 	const buttonCloseAsideMenu = document.querySelector('.button-close-aside');
+	const mainWindow = document.querySelector('.main');
 		
 	let burgerMenuVisible = false;
 	
 	buttonBurgerMenu.addEventListener('click', handleButtonBurgerMenuClick);
+	mainWindow.addEventListener('click', handleMainWindowClick);
 	buttonCloseAsideMenu.addEventListener('click', handleButtonCloseAsideMenuClick);
+
 
 	function handleButtonBurgerMenuClick() {
 		openAsideMenu();
@@ -16,6 +19,12 @@ export default function Header() {
 	function handleButtonCloseAsideMenuClick() {
 		closeAsideMenu();
 		renderHtmlAsideMenu();
+	}
+
+	function handleMainWindowClick() {
+		if (burgerMenuVisible === true) {
+			handleButtonCloseAsideMenuClick();
+		}
 	}
 
 	function openAsideMenu() {
