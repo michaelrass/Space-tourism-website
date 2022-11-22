@@ -112,14 +112,16 @@
 	background-color: #d0d6f939;
 }
 
-.button-navigation__button-dot:hover {
-	background-color: #d0d6f976;
-	z-index: 10;
-}
-
 .button-navigation__button-dot--active {
 	background-color: var(--tertiary-color);
 	z-index: 20;
+}
+
+@media screen and (min-width: 850px) {
+	.button-navigation__button-dot:hover {
+		background-color: #d0d6f976;
+		z-index: 10;
+	}
 }
 
 @media screen and (max-width: 850px) {
@@ -206,7 +208,7 @@
 
 	.image-container__crew-image--active {
 		display: block;
-	}	
+	}
 }
 
 @media screen and (max-width: 500px) {
