@@ -48,7 +48,12 @@
 	width: 15.2rem;
 	height: 15.2rem;
 	border-radius: 15.2rem;
-	margin-left: 1.66rem;
+}
+
+.explore-button__button {
+	width: 100%;
+	border-radius: 15.2rem;
+	height: 100%;
 	border: none;
 	background-color: var(--tertiary-color);
 	font-family: 'Bellefair';
@@ -57,10 +62,11 @@
 	transition: all 200ms ease-in-out;
 }
 
-.main__explore-button:hover {
+.explore-button__button:hover {
 	transition: all 200ms ease-in-out;
 	box-shadow: 0 0 5px 2.77rem #97979741;
 }
+
 @media screen and (max-width: 850px) {
 	.body-home {
 		background-image: url(../../assets/img/home/background-home-tablet.jpg);
