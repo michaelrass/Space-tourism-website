@@ -117,7 +117,7 @@
 }
 
 @media screen and (min-width: 850px) {
-	.button-navigation__button-dot:hover {
+	.button-navigation__button-dot:not(.button-navigation__button-dot--active):hover {
 		background-color: #d0d6f976;
 	}
 }
