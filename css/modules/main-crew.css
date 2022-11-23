@@ -114,13 +114,11 @@
 
 .button-navigation__button-dot--active {
 	background-color: var(--tertiary-color);
-	z-index: 20;
 }
 
 @media screen and (min-width: 850px) {
 	.button-navigation__button-dot:hover {
 		background-color: #d0d6f976;
-		z-index: 10;
 	}
 }
 
