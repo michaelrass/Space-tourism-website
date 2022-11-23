@@ -276,8 +276,25 @@
 
 	.main__planet-image-container {
 		grid-area: 2 / 4 / 5 / 8;
+		display: flex;
+		overflow: scroll;
 		margin-top: 2rem;
+		scroll-behavior: smooth;
+		scroll-snap-type: x;
 	}
+
+	.planet-image-container__image {
+		position: unset;
+		opacity: 1;
+		scroll-snap-align: start;
+		user-select: none;
+	}
+
+	.planet-image-container__image--active {
+		opacity: 1;
+		display: block;
+	}
+
 	.main__planet-image-container::-webkit-scrollbar {
 		display: none;
 	}

@@ -6,7 +6,8 @@ export default function Destination() {
 	const destinationParagraph = document.querySelectorAll('.information__paragraph--hidden');
 	const destinationDistance = document.querySelectorAll('.distance-container__value--hidden');
 	const destinationTravelTime = document.querySelectorAll('.travel-time-container__value--hidden');
-	const slideshow = document.querySelectorAll('.planet-image-container__image');
+	const slides = document.querySelectorAll('.planet-image-container__image');
+	const slideshowContainer = document.querySelector('.main__planet-image-container');
 
 	let currentIndex = 0;
 
@@ -18,6 +19,8 @@ export default function Destination() {
 				handleNavButtonClick(event, index);
 			})
 		}
+
+
 	}
 	
 
@@ -35,13 +38,13 @@ export default function Destination() {
 		if (event.key === 'ArrowLeft') {
 			currentIndex -= 1; 
 			if (currentIndex < 0) {
-				currentIndex = slideshow.length - 1;
+				currentIndex = slides.length - 1;
 			}
 		}
 
 		if (event.key === 'ArrowRight') {
 			currentIndex += 1;
-			if (currentIndex > slideshow.length - 1) {
+			if (currentIndex > slides.length - 1) {
 				currentIndex = 0;
 			}
 		}
@@ -65,7 +68,7 @@ export default function Destination() {
 				time.classList.remove('travel-time-container__value--active');
 			})
 	
-			slideshow.forEach(slide => {
+			slides.forEach(slide => {
 				slide.classList.remove('planet-image-container__image--active');
 			})
 	
@@ -77,8 +80,9 @@ export default function Destination() {
 			destinationParagraph[currentIndex].classList.add('information__paragraph--active');
 			destinationDistance[currentIndex].classList.add('distance-container__value--active');
 			destinationTravelTime[currentIndex].classList.add('travel-time-container__value--active');
-			slideshow[currentIndex].classList.add('planet-image-container__image--active');
+			slides[currentIndex].classList.add('planet-image-container__image--active');
 			navButtonsUnderline[currentIndex].classList.add('navigation__button-planet--active');
+			slideshowContainer.scrollLeft = currentIndex * slideshowContainer.offsetWidth;
 		}
 			
 	}
