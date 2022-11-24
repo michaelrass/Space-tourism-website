@@ -10,6 +10,7 @@ export default function Destination() {
 
 	let currentIndex = 0;
 
+	// If the window is on Main-destination, the buttondots beneath the image gets an event listener.
 	if (mainDestination) {
 		window.addEventListener('keyup', handleWindowKeyup);
 		
@@ -31,6 +32,7 @@ export default function Destination() {
 		renderHtmlDestination();
 	}
 
+	// The left and right arrows increase or decrease the currentIndex Var.
 	function togglePlanetsWithLeftRightArrows(event) {
 		if (event.key === 'ArrowLeft') {
 			currentIndex -= 1; 
@@ -47,6 +49,9 @@ export default function Destination() {
 		}
 	}
 
+	
+	// RenderhtmlDestination first loops through and removes active classlists, 
+	// then uses currentIndex to add the active class back.
 	function renderHtmlDestination() {		
 		if (mainDestination) {
 			destinationTitle.forEach(title => {

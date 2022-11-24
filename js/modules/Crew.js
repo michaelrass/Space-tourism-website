@@ -7,6 +7,8 @@ export default function Crew() {
 	const navButtonDots = document.querySelectorAll('.button-navigation__button-dot');
 	
 	let currentIndex = 0;
+
+	// If the window is on Main-crew, the buttondots beneath the image gets an event listener.
 	if (mainCrew) {
 		window.addEventListener('keyup', handleWindowKeyup);
 		
@@ -33,6 +35,7 @@ export default function Crew() {
 		currentIndex = index;
 	}
 
+	// The left and right arrows increase or decrease the currentIndex Var.
 	function toggleCrewMembersWithLeftRightArrows(event) {
 		if (event.key === 'ArrowLeft') {
 			currentIndex -= 1;
@@ -49,6 +52,8 @@ export default function Crew() {
 		}
 	}
 
+	// Renderhtmlcrew first loops through and removes active classlists, 
+	// then uses currentIndex to add the active class back.
 	function renderHtmlCrew() {
 		if (mainCrew) {
 			crewTitle.forEach(title => {

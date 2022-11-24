@@ -7,7 +7,8 @@ export default function Technology() {
 	const technologySlideshowTablet = document.querySelectorAll('.image-container__technology-image-tablet');
 
 	let currentIndex = 0;
-	
+
+	// If the window is on Main-technology, the buttondots beneath the image gets an event listener.
 	if (mainTechnology) {
 		for (let index = 0; index < technologySlideshow.length; index += 1) {
 			navButtons[index].addEventListener('click', event => {
@@ -34,6 +35,7 @@ export default function Technology() {
 		currentIndex = index;
 	}
 
+	// The left and right arrows increase or decrease the currentIndex Var.
 	function navigateWithUpAndDownArros(event) {
 		if (event.key === 'ArrowLeft') {
 			currentIndex -= 1;
@@ -62,6 +64,8 @@ export default function Technology() {
 		}
 	}
 
+	// RenderhtmlTechnology first loops through and removes active classlists, 
+	// then uses currentIndex to add the active class back.
 	function renderHtmlTechnology() {
 		if (mainTechnology) {
 			navButtons.forEach(button => {
