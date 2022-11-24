@@ -363,6 +363,7 @@
 
 	.card__information {
 		font-family: 'Barlow';
+		height: 120px;
 		font-size: 0.83rem;
 		letter-spacing: 0.08px;
 		line-height: 25px;
