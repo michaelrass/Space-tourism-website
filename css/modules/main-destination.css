@@ -263,6 +263,7 @@
 
 	.main-destination {
 		min-height: 850px;
+		position: relative;
 	}
 	
 	.main__title-container {
@@ -327,6 +328,10 @@
 		width: 80%;
 		display: flex;
 		justify-content: space-evenly;
+		position: absolute;
+		top: 48%;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.navigation__planet-button {
@@ -335,14 +340,9 @@
 		font-size: 0.77rem;
 		font-family: 'Barlow-Condensed';
 		letter-spacing: 2.38px;
-		position: relative;
 		padding-bottom: 1rem;
 	}
-	
-	.navigation__planet-button--active {
-		color: var(--tertiary-color);
-	}
-	
+
 	.planet-button__underline--hidden {
 		display: none;
 	}
@@ -368,15 +368,16 @@
 
 	.card__information {
 		font-family: 'Barlow';
-		height: 120px;
 		font-size: 0.83rem;
 		letter-spacing: 0.08px;
 		line-height: 25px;
 		color: var(--secondary-color);
 		text-align: center;
-		padding-bottom: 1rem;
+		padding-bottom: 2rem;
+		margin-top: 4rem;
 		margin-bottom: 1rem;
 		border-bottom: 1px solid #383B4B;
+		height: 130px;
 	}
 
 	.card__stats {
